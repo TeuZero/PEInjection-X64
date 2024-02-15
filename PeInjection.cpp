@@ -8,9 +8,7 @@ typedef struct BASE_RELOCATION_ENTRY {
 
 DWORD InjectionEntryPoint()
 {
-    CHAR moduleName[128] = "";
-    GetModuleFileNameA(NULL, moduleName, sizeof(moduleName));
-    MessageBoxA(NULL, moduleName, "Injected", NULL);
+    MessageBoxA(NULL, Teuzero, "Injected", NULL);
     return 0;
 }
 
